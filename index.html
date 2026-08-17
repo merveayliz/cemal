@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cemal Azaklı | Link Bio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Bordo - Mavi Karışık Gradyan Arka Plan */
+    body {
+      background: linear-gradient(135deg, #4a0e17 0%, #1a0b2e 40%, #0d2b45 100%);
+      min-height: 100vh;
+    }
+
+    /* Altın rengi parlama efekti kafa çizgisi için */
+    .gold-border {
+      border: 3px solid #d4af37;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Glassmorphism Buton Stilleri */
+    .glass-btn {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .glass-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(212, 175, 55, 0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="text-white flex flex-col items-center justify-center font-sans antialiased selection:bg-rose-900">
+
+  <!-- ================= 3 SANİYE INTRO EKRANI ================= -->
+  <div id="intro-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 overflow-hidden">
+    
+    <!-- Mobil Intro Resmi (BABA YORGUN) -->
+    <div class="block md:hidden absolute inset-0 w-full h-full">
+      <img src="img/BABA YORGUN.png" alt="Mobil Intro" class="w-full h-full object-cover">
+    </div>
+
+    <!-- PC Intro Resmi (pc_2) -->
+    <div class="hidden md:block absolute inset-0 w-full h-full">
+      <img src="img/pc.jpg" alt="PC Intro" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Karartma Katmanı -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Tam Ortada 3-2-1 Geri Sayım Sayacı -->
+    <div class="relative z-10 flex items-center justify-center">
+      <span id="countdown" class="text-white text-8xl md:text-9xl font-black drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] tracking-tighter">
+        3
+      </span>
+    </div>
+  </div>
+
+
+  <!-- ================= ANA LINK SİTESİ İÇERİĞİ ================= -->
+  <main class="w-full max-w-md px-6 py-12 flex flex-col items-center text-center">
+    
+    <!-- Yuvarlak Çerçeveli Profil Logosu -->
+    <div class="relative mb-5">
+      <img 
+        src="img/logo.png " 
+        alt="Cemal Azaklı Logo" 
+        class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover gold-border"
+      >
+    </div>
+
+    <!-- İsim ve Alt Başlık -->
+    <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white drop-shadow-md">
+      CEMAL AZAKLI
+    </h1>
+    <p class="text-xs md:text-sm text-amber-200/80 tracking-[0.25em] font-semibold uppercase mt-1 mb-8">
+      BABA YORGUN
+    </p>
+
+    <!-- Link Butonları -->
+    <div class="w-full flex flex-col gap-4">
+      
+      <!-- Instagram Linki -->
+      <a 
+        href="https://www.instagram.com/cemalazakli?igsh=a202bHc4a29idG41" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="glass-btn w-full py-4 px-6 rounded-2xl flex items-center justify-between group"
+      >
+        <div class="flex items-center gap-4">
+          <i class="fa-brands fa-instagram text-2xl text-pink-400 group-hover:scale-110 transition-transform"></i>
+          <span class="font-medium tracking-wide">Instagram</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-white/50 group-hover:text-white transition-colors"></i>
+      </a>
+
+      <!-- Telefon Numarası (Arama / WhatsApp) -->
+      <a 
+        href="tel:+095459131642" 
+        class="glass-btn w-full py-4 px-6 rounded-2xl flex items-center justify-between group"
+      >
+        <div class="flex items-center gap-4">
+          <i class="fa-solid fa-phone text-xl text-emerald-400 group-hover:scale-110 transition-transform"></i>
+          <span class="font-medium tracking-wide">+09 545 913 16 42</span>
+        </div>
+        <i class="fa-solid fa-chevron-right text-xs text-white/50 group-hover:text-white transition-colors"></i>
+      </a>
+
+      <!-- WhatsApp Hızlı Mesaj Butonu (Ek Stra Kolaylık) -->
+      <a 
+        href="https://wa.me/905459131642" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="glass-btn w-full py-4 px-6 rounded-2xl flex items-center justify-between group"
+      >
+        <div class="flex items-center gap-4">
+          <i class="fa-brands fa-whatsapp text-2xl text-green-400 group-hover:scale-110 transition-transform"></i>
+          <span class="font-medium tracking-wide">WhatsApp'tan Yaz</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-white/50 group-hover:text-white transition-colors"></i>
+      </a>
+
+    </div>
+
+    <!-- Alt Bilgi / Footer -->
+    <footer class="mt-12 text-xs text-white/40 tracking-widest">
+      © CEMAL AZAKLI
+    </footer>
+
+  </main>
+
+
+  <!-- ================= GERİ SAYIM SCRIPT ================= -->
+  <script>
+    let count = 3;
+    const countdownEl = document.getElementById('countdown');
+    const introScreen = document.getElementById('intro-screen');
+
+    const timer = setInterval(() => {
+      count--;
+      if (count > 0) {
+        countdownEl.textContent = count;
+      } else {
+        clearInterval(timer);
+        // Intro ekranını yumuşakça kaybet
+        introScreen.classList.add('opacity-0');
+        setTimeout(() => {
+          introScreen.style.display = 'none';
+        }, 700);
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
